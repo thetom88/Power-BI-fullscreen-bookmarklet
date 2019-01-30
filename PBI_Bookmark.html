@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Power BI Report Server fullscreen bookmark</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    Power BI Report Server fullscreen bookmark
+                </a>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <p class="navbar-text">Credits <a href="https://www.linkedin.com/in/tommasocapelli/" target="_blank">Tommaso
+                        Capelli</a></p>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Power BI Report Server fullscreen bookmark</h1>
+            <p>Since Microsoft haven't already released this functionality in Power BI Report Server I decided to put together a bookmarklet that allows to do that.</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="javascript:(function(){elements = document.getElementsByClassName('pbi-frame');element = elements[0];if(element.requestFullscreen) {    element.requestFullscreen();  } else if(element.mozRequestFullScreen) {    element.mozRequestFullScreen();  } else if(element.webkitRequestFullscreen) {    element.webkitRequestFullscreen();  } else if(element.msRequestFullscreen) {    element.msRequestFullscreen();  }})();">
+                    Power BI RS fullscreen
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Code</h3>
+                <pre>javascript:(function(){elements = document.getElementsByClassName('pbi-frame');element = elements[0];if(element.requestFullscreen) {    element.requestFullscreen();  } else if(element.mozRequestFullScreen) {    element.mozRequestFullScreen();  } else if(element.webkitRequestFullscreen) {    element.webkitRequestFullscreen();  } else if(element.msRequestFullscreen) {    element.msRequestFullscreen();  }})();</pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>How to install the bookmarklet</h1>
+                <hr />
+                <h3>Chrome</h3>
+                <ol>
+                    <li>In Chrome, click Bookmarks > Bookmark Manager
+                    <li>You will see a new tab open with all of your bookmarks in it</li>
+                    <li>(If you see a big blue button labeled "New", then jump to the section below. Otherwise,
+                        continue.)</li>
+                    <li>Copy the JavaScript by right-clicking on the bookmarklet link and selecting 'Copy Link
+                        Location'</li>
+                    <li>Right click on the "Bookmarks Bar" in the left column, and select "Add Page."</li>
+                    <li>Type a name for the bookmarklet in the 'Name' field and paste the code into the "URL" field.</li>
+                </ol>
+                <p>If you have newer Chrome versions:</p>
+                <ol start="4">
+                    <li>Click the blue "New" button in the left column</li>
+                    <li>Copy the JavaScript by right-clicking on the bookmarklet link and selecting 'Copy Link
+                        Location'</li>
+                    <li>Paste the code into the "URL" field.</li>
+                    <li>Click the gray "Add" button.</li>
+                </ol>
+                <hr />
+                <h3>Firefox</h3>
+                <ol>
+                    <li>In Firefox, if you already have a bookmarklet on a web page, right-click on the bookmarklet
+                        link</li>
+                    <li>Select "Bookmark This Link"</li>
+                    <li>Type the name of your Bookmarklet in the "Name" field</li>
+                    <li>Click "Save"</li>
+                </ol>
+                <hr />
+                <h3>Edge</h3>
+                <ol>
+                    <li>Right-click your button above</li>
+                    <li>Click Add to reading list.</li>
+                    <li>Navigate to your site and run the script on that site by clicking Reading list (Reading list on my version of Edge on PC is located behind the three horizontal lines called Hub and then the fancy icon with many curled horizontal lines called Reading list, on mobile the Reading list icon appears above the address bar when you click the ... menu icon) and from that list clicking your script.</li>
+                </ol>
+                <h3>Internet Explorer</h3>
+                <ol>
+                    <li>Make sure your favorites bar is visible. (Right-click on the menu bar and make sure "Favorites"
+                        is checked.)</li>
+                    <li>Right click on the bookmarklet link and choose "Add to Favorites"</li>
+                    <li>In the "Create In" field, choose "Favorites Bar"</li>
+                    <li>Click "Add"</li>
+                    <li>You should now have a bookmarklet link in your Favorites Bar</li>
+                </ol>
+                <hr />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
